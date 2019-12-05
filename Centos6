@@ -250,24 +250,6 @@ echo " "
 echo "INSTALLATION COMPLETE!"
 echo " "
 echo "-------------------------------==TsholoVPN==---------------------------------"
-echo "                           eeeeeeeeeeeeee             
-echo "                        eeeeeeeeeeeeeeeeeeee          
-echo "                      eeee        eeeeeeeeeeee        
-echo "                                     eeeeeeeeee   e   
-echo "                                        eeeeeeeeeeeee 
-echo "                             eeeeeeeeee    eeeeeeeeee 
-echo "                  eeeeeeeeeeeeeeeeeeeeeee      eeeeee 
-echo "                  eeeeeeeeeeeeeeeeeeeeeeeeee          
-echo "                  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 
-echo "                  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 
-echo "                  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee 
-echo "                  eeee                 eeeeeeeeeeeeee 
-echo "                  ee                                  
-echo "                             eeeeeeeeeeeeeeeeeeeeee   
-echo "                           eeeeeeeeeeeeeeeeeeeeeee    
-echo "                         eeeeeeeeeeeeeeeeeeeeee       
-echo "                           eeeeeeeeeeeeeeeee          
-echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Included"  | tee -a log-install.txt
 echo "   - Timezone    : Africa/Johannesburg (GMT +2)"  | tee -a log-install.txt
@@ -301,3 +283,7 @@ echo "Important Information"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "------------------------- Modified by TsholoVPN -----------------------------"
+echo ""
+echo "-----Rebooting your IP: $MYIP -----"
+sleep 5
+reboot
