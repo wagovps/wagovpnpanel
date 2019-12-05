@@ -71,17 +71,17 @@ chkconfig exim off
 
 # install screenfetch
 cd
-wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/daybreakersx/premscript/master/screenfetch"
+wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Screenfetch/screenfetch?token=ABF7ZHTGFLBKYT64R5U2EKC55FF5I"
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .bash_profile
 echo "screenfetch" >> .bash_profile
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/daybreakersx/premscript/master/centos6/openvpn-debian.tar"
+wget -O /etc/openvpn/openvpn.tar "https://github.com/tjay13/TsholoVPN/blob/master/Tools/OpenVPN/openvpn.tar?raw=true"
 cd /etc/openvpn/
 tar xf openvpn.tar
 chmod -R 755 /etc/openvpn
-wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/daybreakersx/premscript/master/centos6/iptables.up.rules"
+wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/OpenVPN/iptables.up.rules?token=ABF7ZHRILCQF2XW6TGLM7ZC55FGJC"
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.d/rc.local
 MYIP=`dig +short myip.opendns.com @resolver1.opendns.com`;
@@ -96,9 +96,9 @@ chkconfig openvpn on
 cd
 
 # install badvpn
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw"
+wget -O /usr/bin/badvpn-udpgw "https://github.com/tjay13/TsholoVPN/blob/master/Tools/BadVPN/badvpn-udpgw?raw=true"
 if [ "$OS" == "x86_64" ]; then
-  wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/daybreakersx/premscript/master/badvpn-udpgw64"
+  wget -O /usr/bin/badvpn-udpgw "https://github.com/tjay13/TsholoVPN/blob/master/Tools/BadVPN/badvpn-udpgw64?raw=true"
 fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.d/rc.local
@@ -180,7 +180,7 @@ chkconfig squid on
 # install ddos deflate
 cd
 yum -y install dnsutils dsniff
-wget https://github.com/jgmdev/ddos-deflate/archive/master.zip
+wget https://github.com/tjay13/TsholoVPN/blob/master/Tools/DDOS/ddos-deflate-master.zip?raw=true
 unzip master.zip
 cd ddos-deflate-master
 ./install.sh
@@ -222,7 +222,7 @@ yum -y install bmon
 
 # download script
 cd
-wget https://raw.githubusercontent.com/daybreakersx/premscript/master/install-premiumscript.sh -O - -o /dev/null|sh
+https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Menu/install-premiumscript.sh?token=ABF7ZHXKOZOR66XR3SWMQEK55FHJ2
 
 # cron
 service crond start
