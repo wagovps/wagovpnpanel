@@ -71,7 +71,7 @@ chkconfig exim off
 
 # install screenfetch
 cd
-wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Screenfetch/screenfetch?token=ABF7ZHTGFLBKYT64R5U2EKC55FF5I"
+wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Screenfetch/screenfetch"
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .bash_profile
 echo "screenfetch" >> .bash_profile
@@ -81,7 +81,7 @@ wget -O /etc/openvpn/openvpn.tar "https://github.com/tjay13/TsholoVPN/blob/maste
 cd /etc/openvpn/
 tar xf openvpn.tar
 chmod -R 755 /etc/openvpn
-wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/OpenVPN/iptables.up.rules?token=ABF7ZHRILCQF2XW6TGLM7ZC55FGJC"
+wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/OpenVPN/iptables.up.rules"
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.d/rc.local
 MYIP=`dig +short myip.opendns.com @resolver1.opendns.com`;
@@ -181,7 +181,7 @@ chkconfig squid on
 cd
 yum -y install dnsutils dsniff
 wget https://github.com/tjay13/TsholoVPN/blob/master/Tools/DDOS/ddos-deflate-master.zip?raw=true
-unzip master.zip
+unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
 rm -rf /root/master.zip
@@ -222,7 +222,7 @@ yum -y install bmon
 
 # download script
 cd
-https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Menu/install-premiumscript.sh?token=ABF7ZHXKOZOR66XR3SWMQEK55FHJ2
+https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Menu/install-premiumscript.sh
 
 # cron
 service crond start
