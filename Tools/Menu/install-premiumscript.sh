@@ -20,9 +20,9 @@ cat > /root/limit.sh <<END3
 END3
 
 cd /usr/local/bin
-wget -O premium-script.tar "https://github.com/tjay13/TsholoVPN/blob/master/Tools/Menu/premium-script.tar?raw=true"
-tar -xvf premium-script.tar
-rm -f premium-script.tar
+wget -O premium-script.zip "https://github.com/tjay13/TsholoVPN/blob/master/Tools/Menu/premium-script.zip?raw=true"
+unzip premium-script.zip
+rm -f premium-script.zip
 
 cp /usr/local/bin/premium-script /usr/local/bin/tsholovpn
 
