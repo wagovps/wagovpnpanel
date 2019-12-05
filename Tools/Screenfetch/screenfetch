@@ -3255,9 +3255,6 @@ asciiText () {
 "$c2       'l0Kk:.              .;xK0l'         %s"
 "$c2          'lkK0xl:;,,,,;:ldO0kl'            %s"
 "$c2              '^:ldxkkkkxdl:^'              %s")
-" $c2 Script Modified by TsholoVPN"
-" $c2 Type 'tsholovpn' to see list menu"
-" $c2 ")
 		;;
 
 		"Slackware")
@@ -4100,29 +4097,34 @@ asciiText () {
 
 		"CentOS")
 			if [[ "$no_color" != "1" ]]; then
-				c1=$(getColor 'white') # White
+				c1=$(getColor 'yellow') # White
+				c2=$(getColor 'light green') # White
+				c3=$(getColor 'light blue') # White
+				c4=$(getColor 'light purple') # White
+				c5=$(getColor 'white') # White
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
 			startline="0"
 			fulloutput=(
-"                                    %s"
-"${c1}         eeeeeeeeeeeeee             %s"
-"${c1}      eeeeeeeeeeeeeeeeeeee          %s"
-"${c1}    eeee        eeeeeeeeeeee        %s"
-"${c1}                   eeeeeeeeee   e   %s"
-"${c1}                      eeeeeeeeeeeee  %s"
-"${c1}           eeeeeeeeee    eeeeeeeeee %s"
-"${c1}eeeeeeeeeeeeeeeeeeeeeee      eeeeee %s"
-"${c1}eeeeeeeeeeeeeeeeeeeeeeeeee          %s"
-"${c1}eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee %s"
-"${c1}eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee %s"
-"${c1}eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee %s"
-"${c1}eeee                 eeeeeeeeeeeeee %s"
-"${c1}ee                                  %s"
-"${c1}           eeeeeeeeeeeeeeeeeeeeee   %s"
-"${c1}         eeeeeeeeeeeeeeeeeeeeeee     %s"
-"${c1}       eeeeeeeeeeeeeeeeeeeeee       %s"
-"${c1}         eeeeeeeeeeeeeeeee          %s")
+"${c1}                   ..                   %s"
+"${c1}                 .PLTJ.                 %s"
+"${c1}                <><><><>                %s"
+"       ${c2}KKSSV' 4KKK ${c1}LJ${c4} KKKL.'VSSKK       %s"
+"       ${c2}KKV' 4KKKKK ${c1}LJ${c4} KKKKAL 'VKK       %s"
+"       ${c2}V' ' 'VKKKK ${c1}LJ${c4} KKKKV' ' 'V       %s"
+"       ${c2}.4MA.' 'VKK ${c1}LJ${c4} KKV' '.4Mb.       %s"
+"${c4}     . ${c2}KKKKKA.' 'V ${c1}LJ${c4} V' '.4KKKKK ${c3}.     %s"
+"${c4}   .4D ${c2}KKKKKKKA.'' ${c1}LJ${c4} ''.4KKKKKKK ${c3}FA.   %s"
+"${c4}  <QDD ++++++++++++  ${c3}++++++++++++ GFD>  %s"
+"${c4}   'VD ${c3}KKKKKKKK'.. ${c2}LJ ${c1}..'KKKKKKKK ${c3}FV    %s"
+"${c4}     ' ${c3}VKKKKK'. .4 ${c2}LJ ${c1}K. .'KKKKKV ${c3}'     %s"
+"       ${c3} 'VK'. .4KK ${c2}LJ ${c1}KKA. .'KV'        %s"
+"       ${c3}A. . .4KKKK ${c2}LJ ${c1}KKKKA. . .4       %s"
+"       ${c3}KKA. 'KKKKK ${c2}LJ ${c1}KKKKK' .4KK       %s"
+"       ${c3}KKSSA. VKKK ${c2}LJ ${c1}KKKV .4SSKK       %s"
+"${c2}                <><><><>                 %s"
+"${c2}                 'MKKM'                  %s"
+"${c2}                   ''"
 " $c2 Script Modified by TsholoVPN"
 " $c2 Type 'tsholovpn' to see list menu"
 " $c2 ")
