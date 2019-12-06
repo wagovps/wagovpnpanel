@@ -53,7 +53,8 @@ yum -y update
 yum -y install httpd php php-pdo php-mysqli php-mysql php-gd php-mbstring.x86_64 php-fpm php-cli
 mkdir -p /var/www/html/status
 chmod -R 755 /var/www/html
-chkconfig openvpn on
+sed -i 's/Listen 80/Listen 81/g' /etc/httpd/conf/httpd.conf
+service httpd restart
 chkconfig httpd on
 
 
@@ -117,7 +118,7 @@ chkconfig sshd on
 # install dropbear
 cd
 yum -y install dropbear
-echo "OPTIONS=\"-p 442\"" > /etc/sysconfig/dropbear
+echo "OPTIONS=\"-p 80\"" > /etc/sysconfig/dropbear
 echo "/bin/false" >> /etc/shells
 service dropbear restart
 chkconfig dropbear on
@@ -233,6 +234,7 @@ chkconfig crond on
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 
 # finalizing
+service httpd restart
 service openvpn restart
 service sshd restart
 service dropbear restart
