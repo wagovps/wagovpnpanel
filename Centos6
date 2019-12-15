@@ -1,5 +1,5 @@
 #!/bin/bash
-# Modified by TsholoVPN
+# Modified by WaGoVPN
 
 #Requirement
 if [ ! -e /usr/bin/curl ]; then
