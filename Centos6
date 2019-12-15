@@ -251,7 +251,7 @@ clear
 echo " "
 echo "INSTALLATION COMPLETE!"
 echo " "
-echo "-------------------------------==TsholoVPN==---------------------------------"
+echo "-------------------------------==WaGoVPN==---------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Included"  | tee -a log-install.txt
 echo "   - Timezone    : Africa/Johannesburg (GMT +2)"  | tee -a log-install.txt
@@ -284,7 +284,7 @@ echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "------------------------- Modified by WagoVPN -----------------------------"
+echo "------------------------- Modified by WaGoVPN -----------------------------"
 echo ""
 echo "-----Rebooting your IP: $MYIP -----"
 sleep 5
