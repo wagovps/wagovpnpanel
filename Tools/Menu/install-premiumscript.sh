@@ -1,5 +1,5 @@
 #!/bin/bash
-# Modified by TsholoVPN
+# Modified by WaGoVPN
 
 cd
 sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
@@ -78,5 +78,5 @@ echo " "
 echo "Premium Script Successfully Installed!"
 echo "Restarting all services..."
 echo "Wait for a few minutes..."
-echo "TsholoVPN"
+echo "WaGoVPN"
 echo " "
