@@ -73,17 +73,17 @@ chkconfig exim off
 
 # install screenfetch
 cd
-wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Screenfetch/screenfetch"
+wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/wagovps/WagoVPN2/master/Tools/Screenfetch/screenfetch"
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .bash_profile
 echo "screenfetch" >> .bash_profile
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.zip "https://github.com/tjay13/TsholoVPN/blob/master/Tools/OpenVPN/openvpn.zip?raw=true"
+wget -O /etc/openvpn/openvpn.zip "https://github.com/wagovps/WagoVPN2/blob/master/Tools/OpenVPN/openvpn.zip?raw=true"
 cd /etc/openvpn/
 unzip openvpn.zip
 chmod -R 755 /etc/openvpn
-wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/OpenVPN/iptables.up.rules"
+wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/wagovps/WagoVPN2/master/Tools/OpenVPN/iptables.up.rules"
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.d/rc.local
 MYIP=`dig +short myip.opendns.com @resolver1.opendns.com`;
@@ -98,9 +98,9 @@ chkconfig openvpn on
 cd
 
 # install badvpn
-wget -O /usr/bin/badvpn-udpgw "https://github.com/tjay13/TsholoVPN/blob/master/Tools/BadVPN/badvpn-udpgw?raw=true"
+wget -O /usr/bin/badvpn-udpgw "https://github.com/wagovps/WagoVPN2/blob/master/Tools/BadVPN/badvpn-udpgw?raw=true"
 if [ "$OS" == "x86_64" ]; then
-  wget -O /usr/bin/badvpn-udpgw "https://github.com/tjay13/TsholoVPN/blob/master/Tools/BadVPN/badvpn-udpgw64?raw=true"
+  wget -O /usr/bin/badvpn-udpgw "https://github.com/wagovps/WagoVPN2/blob/master/Tools/BadVPN/badvpn-udpgw64?raw=true"
 fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.d/rc.local
@@ -182,7 +182,7 @@ chkconfig squid on
 # install ddos deflate
 cd
 yum -y install dnsutils dsniff
-wget https://github.com/tjay13/TsholoVPN/blob/master/Tools/DDOS/ddos-deflate-master.zip?raw=true
+wget https://github.com/wagovps/WagoVPN2/blob/master/Tools/DDOS/ddos-deflate-master.zip?raw=true
 unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
@@ -224,7 +224,7 @@ yum -y install bmon
 
 # download script
 cd
-wget https://raw.githubusercontent.com/tjay13/TsholoVPN/master/Tools/Menu/install-premiumscript.sh -O - -o /dev/null|sh
+wget https://raw.githubusercontent.com/wagovps/WagoVPN2/master/Tools/Menu/install-premiumscript.sh -O - -o /dev/null|sh
 
 # cron
 service crond start
@@ -284,7 +284,7 @@ echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "------------------------- Modified by TsholoVPN -----------------------------"
+echo "------------------------- Modified by WagoVPN -----------------------------"
 echo ""
 echo "-----Rebooting your IP: $MYIP -----"
 sleep 5
