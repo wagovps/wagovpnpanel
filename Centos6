@@ -276,7 +276,7 @@ echo "   - nethogs"  | tee -a log-install.txt
 echo "   - screenfetch"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Premium Script Information"  | tee -a log-install.txt
-echo "   Type tsholovpn to display the command lists"  | tee -a log-install.txt
+echo "   Type wagovpn to display the command lists"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   Explanation of scripts and VPS setup" | tee -a log-install.txt
 echo "   follow this link: http://bit.ly/penjelasansetup"  | tee -a log-install.txt
