@@ -24,7 +24,7 @@ wget -O premium-script.zip "https://github.com/tjay13/TsholoVPN/blob/master/Tool
 unzip premium-script.zip
 rm -f premium-script.zip
 
-cp /usr/local/bin/premium-script /usr/local/bin/tsholovpn
+cp /usr/local/bin/premium-script /usr/local/bin/wagovpn
 
 chmod +x /usr/local/bin/trial
 chmod +x /usr/local/bin/user-add
@@ -58,7 +58,7 @@ chmod +x /usr/local/bin/premium-script
 chmod +x /usr/local/bin/user-delete-expired
 chmod +x /usr/local/bin/auto-reboot
 chmod +x /usr/local/bin/log-install
-chmod +x /usr/local/bin/tsholovpn
+chmod +x /usr/local/bin/wagovpn
 chmod +x /usr/local/bin/user-auto-limit
 chmod +x /usr/local/bin/user-auto-limit-script
 chmod +x /usr/local/bin/edit-port
