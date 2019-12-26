@@ -6,4 +6,4 @@ Installation:
 
     Centos 6 x86 & x64
 
-yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/wagovps/WagoVPN2/master/Centos6 && chmod +x Centos6 && ./Centos6 && rm -f Centos6 && history -c
+yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/wagovps/wagovpnpanel/master/Centos6 && chmod +x Centos6 && ./Centos6 && rm -f Centos6 && history -c
