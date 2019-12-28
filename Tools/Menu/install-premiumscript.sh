@@ -20,7 +20,7 @@ cat > /root/limit.sh <<END3
 END3
 
 cd /usr/local/bin
-wget -O premium-script.zip "https://github.com/tjay13/TsholoVPN/blob/master/Tools/Menu/premium-script.zip?raw=true"
+wget -O premium-script.zip "https://github.com/tjay13/WagoVPN/blob/master/Tools/Menu/premium-script.zip?raw=true"
 unzip premium-script.zip
 rm -f premium-script.zip
 
